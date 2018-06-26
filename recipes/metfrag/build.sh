@@ -9,4 +9,5 @@ cp $RECIPE_DIR/metfrag.sh $outdir/metfrag
 ls -l $outdir
 ln -s $outdir/metfrag $PREFIX/bin
 chmod 0755 "${PREFIX}/bin/metfrag"
-
+# add jni-inchi
+wget http://central.maven.org/maven2/net/sf/jni-inchi/jni-inchi/0.8/jni-inchi-0.8.jar && mkdir -p /root/.jnati/repo/ && jar xf jni-inchi-0.8.jar && mv META-INF/jniinchi /root/.jnati/repo/
